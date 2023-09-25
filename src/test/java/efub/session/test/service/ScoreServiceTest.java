@@ -15,7 +15,7 @@ public class ScoreServiceTest {
 
     // 일반적인 테스트 케이스(높은 점수, A)를 작성
     @Test
-    public void doScore_GivenHighScore_ReturnsGradeA() throws Exception {
+    public void doScore_GivenHighScore_ReturnsGradeA() {
         // given
         final Long HIGH_SCORE = 95L;
         final String GRADE_A = "A";
@@ -26,7 +26,7 @@ public class ScoreServiceTest {
 
     // 일반적인 테스트 케이스(낮은 점수, F)를 작성
     @Test
-    public void doScore_GivenLowScore_ReturnsGradeF() throws Exception {
+    public void doScore_GivenLowScore_ReturnsGradeF() {
         // given
         final Long LOW_SCORE = 20L;
         final String GRADE_F = "F";
@@ -38,7 +38,7 @@ public class ScoreServiceTest {
 
     // 비정상 데이터(음수)에 대한 테스트 케이스를 작성
     @Test
-    public void doScore_GivenMinusScore_ReturnsWarningPhrase() throws Exception {
+    public void doScore_GivenMinusScore_ReturnsWarningPhrase() {
         // given
         final Long MINUS_SCORE = -2L;
         final String WARNING_PHRASE = "Insert a number from 0 to 100";
