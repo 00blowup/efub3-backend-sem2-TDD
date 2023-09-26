@@ -1,6 +1,5 @@
 package efub.session.test.controller;
 
-import efub.session.test.service.ScoreService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +19,6 @@ class HelloControllerTest {
 
     @Autowired
     private MockMvc mvc;
-
-    @MockBean
-    private ScoreService scoreService;
 
     @Test
     public void returnHello() throws Exception {
